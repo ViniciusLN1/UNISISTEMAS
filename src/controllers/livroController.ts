@@ -45,4 +45,3 @@ export const livroController = {
     return res.status(201).json(livro);
   },
 };
-l

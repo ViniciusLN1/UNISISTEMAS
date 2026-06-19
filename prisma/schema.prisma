@@ -43,6 +43,10 @@ model Livro {
   disponiveis   Int          @default(1)
   criadoEm      DateTime     @default(now())
   emprestimos   Emprestimo[]
+
+  @@index([titulo])
+  @@index([autor])
+  @@index([isbn])
 }
 
 model Leitor {
